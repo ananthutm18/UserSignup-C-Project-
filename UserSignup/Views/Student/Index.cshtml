@@ -1,0 +1,91 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hero-section {
+            background: url('https://via.placeholder.com/1920x600') no-repeat center center;
+            background-size: cover;
+            color: #fff;
+            padding: 100px 0;
+        }
+
+            .hero-section h1 {
+                font-size: 4rem;
+            }
+
+            .hero-section p {
+                font-size: 1.25rem;
+            }
+
+        .section-padding {
+            padding: 60px 0;
+        }
+
+        .card-custom {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: none;
+        }
+
+            .card-custom img {
+                border-bottom: 1px solid #ddd;
+            }
+    </style>
+</head>
+<body>
+    <p>
+        @Html.ActionLink("Create New","Create" )
+    </p>
+    <!-- Hero Section -->
+    <section class="hero-section text-center">
+        <div class="container">
+            <h1>Welcome to ASP.NET</h1>
+            <p class="lead">Build modern web applications with a powerful, free framework.</p>
+            <a href="https://asp.net" class="btn btn-primary btn-lg">Get Started &raquo;</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <div class="card card-custom">
+                        <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Getting Started">
+                        <div class="card-body">
+                            <h5 class="card-title">Getting Started</h5>
+                            <p class="card-text">Explore ASP.NET MVC and learn how to build dynamic websites with a clean separation of concerns.</p>
+                            <a href="https://go.microsoft.com/fwlink/?LinkId=301865" class="btn btn-outline-primary">Learn more &raquo;</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-custom">
+                        <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Libraries">
+                        <div class="card-body">
+                            <h5 class="card-title">Get More Libraries</h5>
+                            <p class="card-text">Add, remove, and update libraries and tools in your Visual Studio projects easily with NuGet.</p>
+                            <a href="https://go.microsoft.com/fwlink/?LinkId=301866" class="btn btn-outline-primary">Learn more &raquo;</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-custom">
+                        <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Web Hosting">
+                        <div class="card-body">
+                            <h5 class="card-title">Web Hosting</h5>
+                            <p class="card-text">Find the right mix of features and pricing for your applications with reliable web hosting companies.</p>
+                            <a href="https://go.microsoft.com/fwlink/?LinkId=301867" class="btn btn-outline-primary">Learn more &raquo;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </sectio
